@@ -34,6 +34,10 @@
   <link rel="stylesheet" href="./static/css/index.css">
   <link rel="icon" href="./static/images/favicon.svg">
 
+  <!--image slider 추가-->
+  <script defer src="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/index.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/styles.css"/>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
   <script src="./static/js/bulma-carousel.min.js"></script>
@@ -291,6 +295,22 @@
   </div>
 </section>
 
+            
+<!-- Image Comparison Section -->
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column has-text-centered">
+        <h2 class="title is-3">Image Comparison</h2>
+        <img-comparison-slider>
+          <img slot="first" src="./static/images/interpolate_start.jpg" alt="Start Image"/>
+          <img slot="second" src="./static/images/interpolate_end.jpg" alt="End Image"/>
+        </img-comparison-slider>
+      </div>
+    </div>
+  </div>
+</section>
+              
 
 <section class="section">
   <div class="container is-max-desktop">
